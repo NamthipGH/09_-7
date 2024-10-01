@@ -13,9 +13,9 @@
         $gender = $_POST['gender'];
         $email = $_POST['email'];
 
-        $conn = new PDO("mysql:host=localhost;dbname=webboard;charset=utf8", "root", "");
+        $conn = new PDO("mysql:host=localhost;dbname=webboardp;charset=utf8", "root", "");
 
-        $sql = "INSERT INTO user (login, password, name, gender, email, role) VALUES ('$login', '$passwd','$name','$gender','$email','m')";
+        $sql = "INSERT INTO webboard (login, password, name, gender, email, role) VALUES ('$login', '$passwd','$name','$gender','$email','m')";
 
         $conn->exec($sql);
         $conn = null;

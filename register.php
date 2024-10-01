@@ -22,30 +22,34 @@ if(isset($_SESSION['id'])){
 			<div class="col-sm-10 col-md-8 col-lg-6 mx-auto">
 				<div class="card border-primary">
 					<h5 class="card-header bg-primary text-white">เข้าสู่ระบบ</h5>
+					<form action="register_save.php" method="post">
 					<div class="card-body">
-						<div class="row">
-							<form action="register_save.php" method="post">
+						<div class="row mb-3">
+							
 							<label class="col-lg-3 col-form-label" for="">ชื่อบัญชี :</label>
 							<div class="col-lg-9">
 								<input id="login" type="text" name="login" class="form-control" required>
 
 							</div>
+						</div>
 
-						<div class="row">
+						<div class="row mb-3">
 							<label class="col-lg-3 col-form-label" for="">รหัสผ่าน :</label>
 							<div class="col-lg-9">
 								<input id="pwd" type="text" name="pwd" class="form-control" required>
-
 							</div>
+						</div>
 							
 
-						<div class="row">
+						<div class="row mb-3">
 							<label class="col-lg-3 col-form-label" for="">ชื่อ-นามสกุล :</label>
 							<div class="col-lg-9">
 								<input id="name" type="text" name="name" class="form-control" required>
+						
 							</div>
+						</div>
 
-						<div class="row">
+						<div class="row mb-3">
 							<label class="col-lg-3 col-form-label" for="">เพศ :</label><br>
 							<div class="col-lg-9">
 								<input type="radio" name="gender" value="m">
@@ -57,13 +61,14 @@ if(isset($_SESSION['id'])){
 
 
 							</div>
-							
+						</div>
 						<div class="row">
 							<label class="col-lg-3 col-form-label" for="">อีเมล์ :</label>
 							<div class="col-lg-9">
-								<input id="email" type="text" name="email" class="form-control" required>
+								<input id="email" type="email" name="email" class="form-control" required>
 
 							</div>
+						</div>
 						
 
 						<div class="row">
@@ -73,8 +78,9 @@ if(isset($_SESSION['id'])){
 							</div>
 						</div>
 
-						<input type="submit"/>
-
+						<div class="mt-3 d-flex justify-content-center">
+						<button type="submit" class="btn btn-primary me-2"><i class="bi bi-box-arrow-in-down"></i>สมัครสมาชิก</button>
+						</div>
 						</form>
 
 
