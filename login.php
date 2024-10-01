@@ -24,7 +24,7 @@ if(isset($_SESSION['id'])){
         <div class="col-sm-8 col-md-6 col-lg-4 mx-auto"> 
         <?php
             if(isset($_SESSION['error'])){
-                echo "<div class='alert alert-danger'>ชื่อบัญชีหรือรหัสผ่านไม่ถูกต้อง</div>";
+                echo "<div>ชื่อบัญชีหรือรหัสผ่านไม่ถูกต้อง</div>";
                 unset($_SESSION['error']);
             }
         ?>
